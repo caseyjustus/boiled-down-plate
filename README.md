@@ -1,6 +1,6 @@
 Boiled-Down-Plate
 =================
-* TODO: Add Description*
+Setup for quick and easy customization to fit a variety of front-end development needs, Boiled-Down-Plate is a stripped down / bare essentials framework to quickly get your app up and running.
 
 Installation
 ------------
