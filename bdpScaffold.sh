@@ -3,8 +3,8 @@
       ////////////////////////////////////////////////////////////
      ////                                                    ////
     ////    Create APP Scaffolding using local version      ////
-   ////    of vml-frontendframework-vX.X.                  ////
-  ////    Usage: ./createScaffold.sh @AppName             ////
+   ////    of boiled-down-plate.                           ////
+  ////    Usage: ./bdpScaffold.sh @AppName                ////
  ////                                                    ////
 ////////////////////////////////////////////////////////////
 '
@@ -21,11 +21,11 @@ BaseDir=~/Sites
 : '
     //--------------------------------------------------------//
    //      Update to the path of your local                  //
-  //      vml-frontendframework repo. Do not including      //
+  //      boiled-down-plate repo. Do not include            //
  //      trailing slash                                    //
 //--------------------------------------------------------//
 '
-FrameworkDir=~/Sites/FrontEndCOE/users/vml-frontendframework-v1.3
+BDPDir=~/Sites/boiled-down-plate
 
 
 : '
@@ -33,7 +33,6 @@ FrameworkDir=~/Sites/FrontEndCOE/users/vml-frontendframework-v1.3
  //      Create app directory using passed args            //
 //--------------------------------------------------------//
 '
-
 if [[ $1 = '' || $1 = ' ' ]]; then
     : '----    Fallback if no path argument is passed    ----------'
     echo "Please enter the path where you would like your app built."
@@ -66,8 +65,8 @@ fi
  //      Copy framework into new app path                  //
 //--------------------------------------------------------//
 '
-echo "Copying $FrameworkDir"
-cp -R $FrameworkDir/ .
+echo "Copying $BDPDir"
+cp -R $BDPDir/ .
 
 
 : '
@@ -78,7 +77,15 @@ cp -R $FrameworkDir/ .
 echo "Grabbing the latest version of jQuery"
 curl http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js > assets/js/libs/jquery.min.js
 
+
 : '
-//--    Cleanup: Remove shell if still in directory    ---//
+     //--------------------------------------------------------//
+    //      Cleanup: Remove shell if still in directory       //
+   //      - Remove shell from directory                     //
+  //      - Remove README from directory                    //
+ //      - Remove LICENSE from directory                   //
+//--------------------------------------------------------//
 '
-rm -R createFEDFrameworkScaffold.sh
+rm -R bdpScaffold.sh
+rm -R README.md
+rm -R LICENSE.txt
