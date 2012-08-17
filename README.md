@@ -1,6 +1,8 @@
 Boiled-Down-Plate
 =================
-Setup for quick and easy customization to fit a variety of front-end development needs, Boiled-Down-Plate is a stripped down / bare essentials framework to quickly get your app up and running.
+A front-end framework to kick start your development process.
+
+Setup for quick and easy customization to fit a variety of front-end development needs, Boiled-Down-Plate is a stripped down, bare essentials framework that provides some commonly used tools, files and starter directories.
 
 Installation
 ------------
@@ -11,15 +13,12 @@ Just clone the repo:
 
 That's it. Its ready to go.
 
-* TODO: Add info about .sh *
-
-* TODO: Add contents from original readme.txt
 
 Contribution
 ------------
 - Fork project
 - Add features
-- Run tests
+- Run tests if necessary
 - Send pull request
 
 License
